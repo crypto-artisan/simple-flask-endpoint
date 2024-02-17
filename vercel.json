@@ -1,15 +1,8 @@
 {
-    "version": 2,
-    "builds": [
+    "rewrites": [
         {
-            "src": "*.py",
-            "use": "@liudonghua123/now-flask"
-        }
-    ],
-    "routes": [
-        {
-            "src": "(.*)",
-            "dest": "app.py"
+            "source": "/(.*)",
+            "destination": "api"
         }
     ]
 }
